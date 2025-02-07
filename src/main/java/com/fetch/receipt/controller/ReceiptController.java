@@ -31,7 +31,7 @@ public class ReceiptController {
 
     @PostMapping("/process")
     public ResponseEntity<Map<String, String>> processReceipt(@RequestBody Receipt receipt) {
-        //TODO: process POST request
+        
         try{
             String receiptID = receiptService.processReceipt(receipt);
             HashMap<String, String> resultRespone = new HashMap<>();
